@@ -46,9 +46,10 @@ namespace AppFramework{
         inline bool shouldRestart(){ return s_ShouldRestart; };
 
         inline void setInstance(){ s_Instance = this; };
-        inline static Application& get(){return *s_Instance; };
+
     private:
         static bool s_ShouldRestart;
+    protected:
         static Application* s_Instance;
     };
 

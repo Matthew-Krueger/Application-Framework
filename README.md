@@ -21,6 +21,8 @@ namespace MyNamespace{
 
         virtual int run() override;
         
+        inline static MyApp& get(){return *(MyApp*)s_Instance; };
+
     };
 
 }
